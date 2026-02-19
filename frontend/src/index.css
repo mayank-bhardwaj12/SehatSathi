@@ -1,0 +1,40 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&family=SN+Pro:ital,wght@0,200..900;1,200..900&family=Unbounded:wght@200..900&display=swap');
+
+
+@import "tailwindcss";
+
+
+@theme {
+  --color-primary: #10B981;
+}
+
+
+body {
+  font-family: 'SN Pro', 'Cabin', sans-serif;
+}
+
+
+h1, h2, h3 {
+  font-family: 'SN Pro', 'Cabin', sans-serif;
+}
+
+
+.active hr {
+  @apply block;
+}
+
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+
+@layer utilities {
+  .grid-cols-auto {
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  }
+}
+
+
+
